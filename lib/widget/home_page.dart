@@ -1,8 +1,8 @@
 import 'dart:core';
 
 import 'package:flutter/material.dart';
-import 'package:notification_app/widget/avetar.dart';
 import 'package:notification_app/widget/Chat_Widget.dart';
+import 'package:notification_app/widget/avetar.dart';
 
 class Home_Page extends StatefulWidget {
   @override
@@ -28,8 +28,8 @@ class _Home_PageState extends State<Home_Page> {
                     onPressed: () => Navigator.of(context).pop(),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 30),
+                const Padding(
+                  padding: EdgeInsets.only(top: 30),
                   child: Text(
                     'Today',
                     style: TextStyle(fontSize: 18, color: Colors.black),
@@ -41,9 +41,9 @@ class _Home_PageState extends State<Home_Page> {
           toolbarHeight: 133,
           centerTitle: true,
           title: Column(
-            children: [
+            children: const [
               Padding(
-                padding: const EdgeInsets.only(bottom: 40),
+                padding: EdgeInsets.only(bottom: 40),
                 child: Text(
                   'Notification',
                   style: TextStyle(
@@ -59,7 +59,7 @@ class _Home_PageState extends State<Home_Page> {
               padding: const EdgeInsets.only(top: 90),
               child: TextButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'Clear',
                   style: TextStyle(fontSize: 15, color: Colors.black),
                 ),
@@ -67,50 +67,41 @@ class _Home_PageState extends State<Home_Page> {
             ),
           ],
         ),
-        body: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Card_Widget(
-                  product_name: 'photos',
-                  name: 'Omar Nasser',
-                  avetar_image: ("assets/person.png"),
-                ),
-              ],
-            ),
-            SizedBox(height: 16,),
-            Row(   mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Chat_Widget(
-                  Massage_Number:12,
-                  name: 'Omar Nasser',
-                  chat_image: ("assets/message.png"),
-                ),
-              ],
-            ),
-SizedBox(height: 16,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Card_Widget(
-                  product_name: 'photos',
-                  name: 'Omar Nasser',
-                  avetar_image: ("assets/person.png"),
-                ),
-              ],
-            ),
-            SizedBox(height: 16,),
-            Row(   mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Chat_Widget(
-                  Massage_Number:12,
-                  name: 'Omar Nasser',
-                  chat_image: ("assets/message.png"),
-                ),
-              ],
-            )
-          ],
+        body: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            children: const [
+              Card_Widget(
+                product_name: 'photos',
+                name: 'Omar Nasser',
+                Image_Card: true,
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Chat_Widget(
+                Massage_Number: 12,
+                Name: 'Omar Nasser',
+                Image_Card: false,
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Card_Widget(
+                product_name: 'photos',
+                name: 'Omar Nasser',
+                Image_Card: true,
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Chat_Widget(
+                Massage_Number: 12,
+                Name: 'Omar Nasser',
+                Image_Card: false,
+              )
+            ],
+          ),
         ));
   }
 }
