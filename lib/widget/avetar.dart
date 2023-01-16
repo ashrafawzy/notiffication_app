@@ -27,7 +27,7 @@ class CardWidget extends StatelessWidget {
           child: Row(
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(10.0),
                 child: CircleAvatar(
                   foregroundImage: (imageCard!
                       ? AssetImage(imageAvatar!)
@@ -36,49 +36,50 @@ class CardWidget extends StatelessWidget {
                   backgroundColor: Colors.white70,
                 ),
               ),
-              Column(
-                children: [
-                  Padding(
-                    padding: const  EdgeInsets.symmetric(horizontal: 18),
-                    child: RichText(
-                      text: TextSpan(
-                        text: 'A new offer from ',
-                        // Here is the explicit parent TextStyle
-                        style: const TextStyle(
-                          fontSize: 14.0,
-                          color: Colors.black,
-                        ),
-                        children: <TextSpan>[
-                          TextSpan(
-                              text: '$name ',
-                              style:
-                                  TextStyle(fontSize: 14, color: Colors.red)),
-                          const TextSpan(
-                              text: 'for ',
-                              style: TextStyle(
-                                  fontSize: 14, color: Colors.black)),
-                          TextSpan(
-                            text: '\n $productName',
-                            style: const TextStyle(fontSize: 14, color: Colors.red),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 5),
+                child: Expanded(
+                  child: Column(
+                    children: [
+                      RichText(
+                        text: TextSpan(
+                          text: 'A new offer from ',
+                          // Here is the explicit parent TextStyle
+                          style: const TextStyle(
+                            fontSize: 14.0,
+                            color: Colors.black,
                           ),
-                        ],
+                          children: <TextSpan>[
+                            TextSpan(
+                                text: '$name ',
+                                style:
+                                    TextStyle(fontSize: 14, color: Colors.red)),
+                            const TextSpan(
+                                text: 'for ',
+                                style: TextStyle(
+                                    fontSize: 14, color: Colors.black)),
+                            TextSpan(
+                              text: '\n $productName',
+                              style: const TextStyle(
+                                  fontSize: 14, color: Colors.red),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 165, bottom: 5),
+                        child: Text(
+                          ' 04.30 PM ',
+                          style: TextStyle(
+                              fontSize: 12, fontWeight: FontWeight.normal),
+                        ),
+                      ),
+                    ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 165,bottom: 5),
-                    child: Text(
-                      ' 04.30 PM ',
-                      style:
-                      TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
-                    ),
-                  ), ],
+                ),
               ),
             ],
           ),
-
-
-
         ),
       )
     ]);

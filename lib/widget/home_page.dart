@@ -19,89 +19,87 @@ class _HomePageState extends State<HomePage> {
           elevation: 0,
           leading: Padding(
             padding: const EdgeInsets.only(left: 5),
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 20),
-                  child: IconButton(
-                    icon: Icon(Icons.arrow_back_ios, color: Colors.black),
-                    onPressed: () => Navigator.of(context).pop(),
-                  ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(top: 30),
-                  child: Text(
-                    'Today',
-                    style: TextStyle(fontSize: 18, color: Colors.black),
-                  ),
-                )
-              ],
+            child: Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: IconButton(
+                icon: Icon(Icons.arrow_back_ios, color: Colors.black),
+                onPressed: () => Navigator.of(context).pop(),
+              ),
             ),
           ),
-          toolbarHeight: 133,
+          toolbarHeight: 80,
           centerTitle: true,
           title: Column(
             children: const [
-              Padding(
-                padding: EdgeInsets.only(bottom: 40),
-                child: Text(
-                  'Notification',
-                  style: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black),
-                ),
+              Text(
+                'Notification',
+                style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black),
               ),
             ],
           ),
-          actions: <Widget>[
+
+        ),
+        body: Column(
+          children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: TextButton(
-                onPressed: () {},
-                child: const Text(
-                  'Clear',
-                  style: TextStyle(fontSize: 15, color: Colors.black),
+              padding: const EdgeInsets.all(10.0),
+              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text('Today',style: TextStyle(fontSize: 15, color: Colors.black,fontWeight: FontWeight.bold),),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text(
+                    'Clear',
+                    style: TextStyle(fontSize: 15, color: Colors.black),
+                  ),
                 ),
+              ],
+          ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 40),
+              child: Column(
+
+                children: const [
+
+                  CardWidget(
+                    productName: 'photos',
+                    name: 'Omar Nasser',
+                    imageCard: true,
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+
+                  ChatWidget(
+                    massageNumber: 12,
+                    name: 'Omar Nasser',
+                    imageCard: false,
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  CardWidget(
+                    productName: 'photos',
+                    name: 'Omar Nasser',
+                    imageCard: true,
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  ChatWidget(
+                    massageNumber: 12,
+                    name: 'Omar Nasser',
+                    imageCard: false,
+                  )
+                ],
               ),
             ),
           ],
-        ),
-        body: Padding(
-          padding: const EdgeInsets.all(24),
-          child: Column(
-            children: const [
-              CardWidget(
-                productName: 'photos',
-                name: 'Omar Nasser',
-                imageCard: true,
-              ),
-              SizedBox(
-                height: 16,
-              ),
-              ChatWidget(
-                massageNumber: 12,
-                name: 'Omar Nasser',
-                imageCard: false,
-              ),
-              SizedBox(
-                height: 16,
-              ),
-              CardWidget(
-                productName: 'photos',
-                name: 'Omar Nasser',
-                imageCard: true,
-              ),
-              SizedBox(
-                height: 16,
-              ),
-              ChatWidget(
-                massageNumber: 12,
-                name: 'Omar Nasser',
-                imageCard: false,
-              )
-            ],
-          ),
         ));
   }
 }
