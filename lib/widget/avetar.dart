@@ -1,48 +1,50 @@
 import 'package:flutter/material.dart';
 
-class Card_Widget extends StatelessWidget {
+class CardWidget extends StatelessWidget {
   final String? name;
-  final String? product_name;
-  final String? Image_Chat = ('assets/message.png');
-  final String? Image_Avatar = ('assets/person.png');
-  final bool? Image_Card;
+  final String? productName;
+  final String? imageChat = ('assets/message.png');
+  final String? imageAvatar = ('assets/person.png');
+  final bool? imageCard;
 
-  const Card_Widget({
+  const CardWidget({
     required this.name,
-    required this.product_name,
-    required this.Image_Card,
+    required this.productName,
+    required this.imageCard,
   });
 
   @override
   Widget build(BuildContext context) {
     return Row(children: [
       Container(
-        color: Color(0xFFFAFAFA),
-        height: 80,
-        width: 326,
+        color: const Color(0xFFFAFAFA),
+        // height: 80,
+        // width: 326,
         child: Card(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           elevation: 1,
-          child: Column(children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 15, top: 12),
-              child: Row(
+          child: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: CircleAvatar(
+                  foregroundImage: (imageCard!
+                      ? AssetImage(imageAvatar!)
+                      : AssetImage(imageChat!)),
+                  radius: 24,
+                  backgroundColor: Colors.white70,
+                ),
+              ),
+              Column(
                 children: [
-                  CircleAvatar(
-                    foregroundImage: (Image_Card!
-                        ? AssetImage(Image_Avatar!)
-                        : AssetImage(Image_Chat!)),
-                    radius: 22,
-                    backgroundColor: Colors.white70,
-                  ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 12),
+                    padding: const  EdgeInsets.symmetric(horizontal: 18),
                     child: RichText(
                       text: TextSpan(
                         text: 'A new offer from ',
                         // Here is the explicit parent TextStyle
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 14.0,
                           color: Colors.black,
                         ),
@@ -51,34 +53,32 @@ class Card_Widget extends StatelessWidget {
                               text: '$name ',
                               style:
                                   TextStyle(fontSize: 14, color: Colors.red)),
-                          TextSpan(
+                          const TextSpan(
                               text: 'for ',
-                              style: new TextStyle(
+                              style: TextStyle(
                                   fontSize: 14, color: Colors.black)),
                           TextSpan(
-                            text: '\n $product_name',
-                            style: TextStyle(fontSize: 14, color: Colors.red),
+                            text: '\n $productName',
+                            style: const TextStyle(fontSize: 14, color: Colors.red),
                           ),
                         ],
                       ),
                     ),
                   ),
-                ],
+                  Padding(
+                    padding: const EdgeInsets.only(left: 165,bottom: 5),
+                    child: Text(
+                      ' 04.30 PM ',
+                      style:
+                      TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
+                    ),
+                  ), ],
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 250),
-              child: Row(
-                children: [
-                  Text(
-                    ' 04.30 PM ',
-                    style:
-                        TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
-                  ),
-                ],
-              ),
-            ),
-          ]),
+            ],
+          ),
+
+
+
         ),
       )
     ]);

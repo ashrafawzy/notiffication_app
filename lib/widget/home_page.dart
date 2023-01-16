@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:notification_app/widget/Chat_Widget.dart';
 import 'package:notification_app/widget/avetar.dart';
 
-class Home_Page extends StatefulWidget {
+class HomePage extends StatefulWidget {
   @override
-  State<Home_Page> createState() => _Home_PageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _Home_PageState extends State<Home_Page> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,7 +56,7 @@ class _Home_PageState extends State<Home_Page> {
           ),
           actions: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(top: 90),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               child: TextButton(
                 onPressed: () {},
                 child: const Text(
@@ -71,34 +71,34 @@ class _Home_PageState extends State<Home_Page> {
           padding: const EdgeInsets.all(24),
           child: Column(
             children: const [
-              Card_Widget(
-                product_name: 'photos',
+              CardWidget(
+                productName: 'photos',
                 name: 'Omar Nasser',
-                Image_Card: true,
+                imageCard: true,
               ),
               SizedBox(
                 height: 16,
               ),
-              Chat_Widget(
-                Massage_Number: 12,
-                Name: 'Omar Nasser',
-                Image_Card: false,
-              ),
-              SizedBox(
-                height: 16,
-              ),
-              Card_Widget(
-                product_name: 'photos',
+              ChatWidget(
+                massageNumber: 12,
                 name: 'Omar Nasser',
-                Image_Card: true,
+                imageCard: false,
               ),
               SizedBox(
                 height: 16,
               ),
-              Chat_Widget(
-                Massage_Number: 12,
-                Name: 'Omar Nasser',
-                Image_Card: false,
+              CardWidget(
+                productName: 'photos',
+                name: 'Omar Nasser',
+                imageCard: true,
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              ChatWidget(
+                massageNumber: 12,
+                name: 'Omar Nasser',
+                imageCard: false,
               )
             ],
           ),
