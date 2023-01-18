@@ -1,0 +1,7 @@
+<svg id="Group_10527" data-name="Group 10527" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Ellipse_497" data-name="Ellipse 497" fill="#fff" stroke="#ba1818" stroke-width="1.5">
+    <circle cx="15" cy="15" r="15" stroke="none"/>
+    <circle cx="15" cy="15" r="14.25" fill="none"/>
+  </g>
+  <path id="Icon_open-info" data-name="Icon open-info" d="M7.236,0A2.412,2.412,0,1,0,9.648,2.412,2.419,2.419,0,0,0,7.236,0ZM3.618,6.03A3.613,3.613,0,0,0,0,9.648H2.412a1.206,1.206,0,0,1,2.412,0c0,.675-2.412,3.956-2.412,6.03A3.568,3.568,0,0,0,6.03,19.3a3.613,3.613,0,0,0,3.618-3.618H7.236a1.206,1.206,0,0,1-2.412,0c0-.868,2.412-4.438,2.412-6.03A3.644,3.644,0,0,0,3.618,6.03Z" transform="translate(10.065 5.178)" fill="#ba1818" stroke="#fff" stroke-width="0.5"/>
+</svg>

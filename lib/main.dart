@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notification_app/widget/bottom_nav_bar.dart';
 import 'package:notification_app/widget/home_page.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  HomePage(),
+      home:  BottomNavBar(),
     );
   }
 }

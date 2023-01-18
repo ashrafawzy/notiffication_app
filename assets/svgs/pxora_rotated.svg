@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="353" height="158" viewBox="0 0 353 158">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Pxora" width="353" height="158" rx="12" transform="translate(-0.051)" fill="#fff" stroke="#e5e5e5" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_9976" data-name="Mask Group 9976" transform="translate(0.051)" clip-path="url(#clip-path)">
+    <g id="Pxora-2" data-name="Pxora" transform="translate(467.199 152.148) rotate(177)">
+      <path id="Path_12976" data-name="Path 12976" d="M44.239,89.387a31.716,31.716,0,0,1-7.922-20.671L36.033-.118C19.46,8.941,6.576,23.115-.124,40.1Z" transform="translate(4.995 10.614)" fill="#de2d3f"/>
+      <path id="Path_12977" data-name="Path 12977" d="M68.837,70.9,49.8,49.742c-.143-.158-.276-.315-.412-.472L5.028-.016l-.01.009a72.975,72.975,0,0,0-5.1,27.16C0,47.118,8.119,65.373,21.431,79.277L41.664,75.7Z" transform="translate(-0.156 50.732)" fill="#fe3f46"/>
+      <path id="Path_12978" data-name="Path 12978" d="M64.024,32.97,33.338-.109,23.2,25.678-.263,85.434C30.138,80.167,54.7,59.787,64.024,32.97Z" transform="translate(100.99 69.916)" fill="#ffaf02"/>
+      <path id="Path_12979" data-name="Path 12979" d="M102.818-.337c-4.242,10.82-14.3,18.74-26.5,20.9l-27.681,4.9L47.3,25.7,20.128,30.5-.1,34.076C15.465,50.35,38.15,60.661,63.369,60.758a90.541,90.541,0,0,0,15.978-1.342Z" transform="translate(21.38 95.934)" fill="#f6a000"/>
+      <path id="Path_12980" data-name="Path 12980" d="M87.546,51.494C87.464,31.726,79.509,13.639,66.428-.217L-.033,10.659a37.435,37.435,0,0,1,33.324,11.1l19.5,21.013L83.475,75.848A72.618,72.618,0,0,0,87.546,51.494Z" transform="translate(81.539 27.04)" fill="#6ca2a4"/>
+      <path id="Path_12981" data-name="Path 12981" d="M78.449,27.049C62.867,10.54,40.013.052,14.581-.045A90.2,90.2,0,0,0,0,1.07l.161,38.8,11.831-1.942Z" transform="translate(69.518 -0.228)" fill="#7fbab8"/>
+      <line id="Line_214" data-name="Line 214" x1="27.318" y1="30.36" transform="translate(41.362 91.273)" fill="none"/>
+    </g>
+  </g>
+</svg>

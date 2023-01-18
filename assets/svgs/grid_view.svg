@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.999" height="17.999" viewBox="0 0 17.999 17.999">
+  <g id="vuesax_outline_grid-2" data-name="vuesax/outline/grid-2" transform="translate(-748 -188)">
+    <g id="grid-2" transform="translate(748 188)">
+      <path id="Vector" d="M10.312,16.124h-4.5C1.74,16.124,0,14.384,0,10.312v-4.5C0,1.74,1.74,0,5.812,0h4.5c4.072,0,5.812,1.74,5.812,5.812v4.5C16.124,14.384,14.384,16.124,10.312,16.124Zm-4.5-15c-3.457,0-4.687,1.23-4.687,4.687v4.5C1.125,13.769,2.355,15,5.812,15h4.5C13.769,15,15,13.769,15,10.312v-4.5c0-3.457-1.23-4.687-4.687-4.687Z" transform="translate(0.937 0.937)" fill="#292d32"/>
+      <path id="Vector-2" data-name="Vector" d="M.562,16.124A.567.567,0,0,1,0,15.562v-15A.567.567,0,0,1,.562,0a.567.567,0,0,1,.562.562v15A.567.567,0,0,1,.562,16.124Z" transform="translate(8.437 0.937)" fill="#292d32"/>
+      <path id="Vector-3" data-name="Vector" d="M15.562,1.125h-15A.567.567,0,0,1,0,.562.567.567,0,0,1,.562,0h15a.567.567,0,0,1,.562.562A.567.567,0,0,1,15.562,1.125Z" transform="translate(0.937 8.437)" fill="#292d32"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H18V18H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>
